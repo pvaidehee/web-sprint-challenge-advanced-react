@@ -4,7 +4,6 @@ body {
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
 }
-
 .container {
   max-width: 800px;
   margin: 0 auto;
@@ -13,14 +12,12 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-
 h1 {
   font-weight: 100;
   color: white;
   text-align: center;
   font-size: 2rem;
 }
-
 .cart-badge {
   position: absolute;
   top: -8px;
@@ -34,7 +31,6 @@ h1 {
   font-size: 0.6rem;
   text-align: center;
 }
-
 .plant-list {
   padding-top: 32px;
   max-width: 1200px;
@@ -43,17 +39,14 @@ h1 {
   flex-flow: row wrap;
   justify-content: space-evenly;
 }
-
 .plant-card {
   display: flex;
   width: 50%;
   padding: 32px 0;
 }
-
 .plant-image {
   height: 296px;
 }
-
 .plant-details {
   padding: 0 32px 0 16px;
   color: #fff;
@@ -63,53 +56,42 @@ h1 {
   justify-content: space-between;
   align-items: flex-start;
 }
-
 .plant-name {
   margin-top: 0;
   margin-bottom: 6px;
 }
-
 .plant-scientific-name {
   font-style: italic;
 }
-
 .plant-bottom-row {
   display: flex;
   margin-top: 16px;
   align-items: center;
 }
-
 .plant-bottom-row > p {
   margin-right: 32px;
 }
-
 .plant-button {
   justify-self: flex-end;
 }
-
 p {
   margin: 0;
 }
-
 .cart {
   width: 800px;
   margin: 0 auto;
 }
-
 .cart > .plant-card {
   width: 100%;
   margin: 0 auto;
   border-bottom: 1px solid #cf0;
 }
-
 .cart .plant-image {
   height: 160px;
 }
-
 .cart .plant-details {
   justify-content: center;
 }
-
 .checkout-section {
   color: #fff;
   padding: 32px 0;
@@ -117,7 +99,6 @@ p {
   flex-flow: column nowrap;
   align-items: flex-end;
 }
-
 .success-message {
   width: 400px;
   margin: 0 auto;
@@ -125,13 +106,11 @@ p {
   padding: 24px;
   background-color: #cf0;
 }
-
 form {
   background: #0e101c;
   max-width: 400px;
   margin: 0 auto;
 }
-
 input {
   display: block;
   box-sizing: border-box;
@@ -142,7 +121,6 @@ input {
   margin-bottom: 10px;
   font-size: 14px;
 }
-
 label {
   line-height: 2;
   text-align: left;
@@ -153,7 +131,6 @@ label {
   font-size: 14px;
   font-weight: 200;
 }
-
 button {
   background: #ec5990;
   color: white;
@@ -165,11 +142,9 @@ button {
   font-weight: 100;
   cursor: pointer;
 }
-
 button:hover {
   background: #df2e6c;
 }
-
 button:active,
 input[type="button"]:active,
 input:active {
@@ -178,35 +153,28 @@ input:active {
   border: 1px solid transparent;
   opacity: 0.8;
 }
-
 input:disabled {
   opacity: 0.4;
 }
-
 input[type="button"]:hover {
   transition: 0.3s all;
 }
-
 button,
 input[type="button"],
 input {
   -webkit-appearance: none;
 }
-
 .App {
   max-width: 600px;
   margin: 0 auto;
 }
-
 hr {
   margin-top: 30px;
 }
-
 h2 {
   color: white;
   font-weight: 200;
 }
-
 button {
   display: block;
   margin-top: 16px;
@@ -215,12 +183,10 @@ button {
   padding: 10px 20px;
   border-radius: 4px;
 }
-
 pre {
   color: white;
   white-space: pre;
 }
-
 .steps {
   color: white;
   display: flex;
@@ -228,26 +194,41 @@ pre {
   margin: 0;
   padding: 0;
 }
-
 .steps a {
   color: #0e101c;
   text-decoration: none;
   font-size: 14px;
   line-height: 2;
 }
-
 .steps li {
   background: #cf0;
   padding: 3px 15px;
   margin-right: 15px;
   position: relative;
 }
-
 .steps li:last-child {
   border: none;
 }
-
 .active {
   color: #0e101c;
   border-bottom: 2px solid !important;
+}
+
+
+/* Adding darkMode for stretch `````````````````*/
+
+.dark-mode {
+  background-color: #949fb3;
+}
+
+.dark-mode p{
+  color:black;
+}
+
+.dark-mode h1{
+  color:black;
+}
+
+.dark-mode form{
+  background-color: #949fb3;
 }
