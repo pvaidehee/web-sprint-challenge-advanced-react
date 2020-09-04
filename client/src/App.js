@@ -4,10 +4,18 @@ import { BrowserRouter as Router, Route, NavLink } from "react-router-dom";
 import PlantList from "./components/PlantList";
 import ShoppingCart from "./components/ShoppingCart";
 import CheckoutForm from "./components/CheckoutForm";
+import {useDarkMode} from "./hooks/useDarkMode";
 
 import "./App.css";
 
 function App() {
+
+  const [darkMode, setDarkMode] = useDarkMode(false);
+  const changeBackground = e => {
+    e.preventDefault();
+    setDarkMode(!darkMode);
+  };
+
   // array of plants that have been added to the cart
   const [cart, setCart] = useState([]);
 
@@ -28,6 +36,7 @@ function App() {
           <h1>
             React Plants <span role="img">🌿</span>
           </h1>
+          <button onClick={changeBackground}> Tell me your Mode! </button>
           <ul className="steps">
             <li>
               <NavLink exact to="/">
