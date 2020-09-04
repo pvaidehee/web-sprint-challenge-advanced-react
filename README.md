@@ -30,13 +30,69 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. Explain how to build stateful class components.
 
+a. set up class components that extends React.Components
+b. set up a constructor inside the class with super() and state
+c. Add return inside render()
+
+Like this: 
+class SomeThing extends React.Component{
+  constructor(){
+    super()
+    this.state = {
+      anyState=[]
+    }
+  }
+
+  render(){
+    return(
+      <div>
+      </div>
+    )
+  }
+}
+
 2. Describe the different phases of the component lifecycle.
 
+a. Mounting: puts elements into the DOM
+b. Updating: happens when a compnent is updated whenever there is a change in the component's state or props.
+c. Unmounting: happens when a component is removed from the DOM.
+
 3. Demonstrate an understanding of class component lifecycle methods.
+ 
+  a) Mounting:
+  *constructor() --> place for us to define our state.
+  *render() --> required for class components.
+  *componentDidMount --> after the component mounts, we run statements that require the component to be already placed in the DOM there.
+
+  b) Updating:
+  *rener() --> required for class components.
+  *componentDidUpdate() --> called after the component is updated in the DOM.
+
+  c) Unmounting: 
+  *componentWillUnmount() -->  called when the component is about to be removed from the DOM.
+
 
 4. Define stateful logic.
 
+A logic that is built into a component. It usually has to work with changing state within the component.
+
 5. Describe how to test a React component with React Testing Library.
+
+import React from "react";
+import { render, screen, fireEvent } from "@testing-library/react"; 
+import App from "./App"; --> whichever component we want to render for tests
+
+Test structure: 
+test('title', () => {
+  //we always want to render the component inside of our test before doing anything: 
+  render(<App />);
+})
+
+we can refer to the cheatsheet to decide what we want to use for our tests : 
+https://testing-library.com/docs/react-testing-library/cheatsheet
+
+we can test the functionality of our component by testing user experiene on the DOM (see if user can type in given inputs, if our buttons are clickable, if anything displays after submission, etc)
+
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
