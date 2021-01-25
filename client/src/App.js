@@ -34,7 +34,7 @@ function App() {
       <Router>
         <nav className="container">
           <h1>
-            React Plants <span role="img">🌿</span>
+            React Plants <span role="img" alt= "React Plants heading">🌿</span>
           </h1>
           <button onClick={changeBackground}> Tell me your Mode! </button>
           <ul className="steps">
